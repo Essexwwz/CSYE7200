@@ -36,6 +36,8 @@ class Arithmetic(val start: Int) {
   def goldbach: (Int, Int) = ??? // TO BE IMPLEMENTED
 }
 
+
+
 object Arithmetic {
   implicit def int2S99Int(i: Int): Arithmetic = new Arithmetic(i)
 
@@ -43,7 +45,6 @@ object Arithmetic {
   lazy val primes: LazyList[Int] = 2 #:: LazyList.from(3, 2).filter(_.isPrime)
 
   // P32
-  @scala.annotation.tailrec
   def gcd(m: Int, n: Int): Int = ??? // TO BE IMPLEMENTED
 
   // P39
